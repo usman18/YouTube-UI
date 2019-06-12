@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        
+        
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                        android:id="@+id/imgThumbnail"
+                        android:layout_width="match_parent"
+                        android:layout_height="195dp"
+                        android:scaleType="centerCrop"
+                        android:background="@color/trans_black"
+                        />
+                
+                <TextView
+                        android:id="@+id/tvDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:20"
+                        android:textColor="@color/white"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="8dp"
+                        android:textSize="12sp"
+                        android:padding="2dp"
+                        android:background="@color/trans_black"
+                        />
+                
+                
+        </FrameLayout>
+        
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                >
+        
+                <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/imgChannelPic"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/youtube1"
+                        />
+       
+                
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="36dp"
+                        android:layout_marginStart="12dp"
+                        >
+                        
+                        <TextView
+                                android:id="@+id/tvVideoTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Joe Rogan with Elon Musk on Tesla"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                />
+                        
+                        <TextView
+                                android:id="@+id/tvInfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Powerful JRE 2m views 1 year ago"
+                                android:textColor="#606060"
+                                android:textSize="12sp"
+                                />
+                        
+                        
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CC"
+                                android:textColor="#606060"
+                                android:background="#f2f2f2"
+                                android:paddingStart="4dp"
+                                android:textSize="13sp"
+                                android:paddingEnd="4dp"
+                                />
+                        
+                        
+                </LinearLayout>
+                
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_more_vert"
+                        />
+                
+       
+        </LinearLayout>
+        
+        
+        
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginTop="12dp"
+                />
+
+</LinearLayout>

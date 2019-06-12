@@ -4,5 +4,8 @@
         <color name="colorPrimaryDark">#cccccc</color>
         <color name="colorAccent">#fe0000</color>
         <color name="black">#000000</color>
+        <color name="trans_black">#c6000000</color>
         <color name="grey">#606060</color>
+        <color name="white">#ffffff</color>
+        <color name="divider">#ebebeb</color>
 </resources>
