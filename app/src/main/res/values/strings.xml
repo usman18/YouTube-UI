@@ -6,4 +6,5 @@
         <string name="library">Library</string>
         <string name="subscriptions">Subscriptions</string>
         <string name="search">Search</string>
+        <string name="trending">Trending</string>
 </resources>

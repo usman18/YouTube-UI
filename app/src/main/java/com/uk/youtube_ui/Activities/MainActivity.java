@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import com.uk.youtube_ui.Fragments.HomeFragment;
 import com.uk.youtube_ui.Fragments.InboxFragment;
 import com.uk.youtube_ui.Fragments.LibraryFragment;
-import com.uk.youtube_ui.Fragments.SearchFragment;
+import com.uk.youtube_ui.Fragments.TrendingFragment;
 import com.uk.youtube_ui.Fragments.SubscriptionsFragment;
 import com.uk.youtube_ui.R;
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 					case R.id.home:
 						return loadFragment(new HomeFragment());
 					case R.id.search:
-						return loadFragment(new SearchFragment());
+						return loadFragment(new TrendingFragment());
 					case R.id.subscriptions:
 						return loadFragment(new SubscriptionsFragment());
 					case R.id.inbox:

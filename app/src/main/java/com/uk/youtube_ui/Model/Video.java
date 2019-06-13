@@ -8,9 +8,9 @@ public class Video {
 	private String views;
 	private String timestamp;
 	private String videoDuration;
+	private boolean captions;
 	
-	
-	public Video(String channelPic, String thumbnailUrl, String title, String channelName, String views, String timestamp, String videoDuration) {
+	public Video(String channelPic, String thumbnailUrl, String title, String channelName, String views, String timestamp, String videoDuration, boolean captions) {
 		this.channelPic = channelPic;
 		this.thumbnailUrl = thumbnailUrl;
 		this.title = title;
@@ -18,6 +18,15 @@ public class Video {
 		this.views = views;
 		this.timestamp = timestamp;
 		this.videoDuration = videoDuration;
+		this.captions = captions;
+	}
+	
+	public boolean hasCaptions() {
+		return captions;
+	}
+	
+	public void setCaptions(boolean captions) {
+		this.captions = captions;
 	}
 	
 	public String getThumbnailUrl() {

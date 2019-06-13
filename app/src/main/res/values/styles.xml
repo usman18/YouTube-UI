@@ -17,8 +17,12 @@
         </style>
         
         
-        <style name="bottom_nav" parent="Widget.Design.BottomNavigationView">
-                <item name="itemIconSize">20dp</item>
+        <style name="bottom_nav_style" parent="Widget.Design.BottomNavigationView">
+                <item name="itemIconSize">22dp</item>
+        </style>
+        
+        <style name="bottom_nav_text" parent="@style/TextAppearance.AppCompat.Caption">
+                <item name="android:textSize">9sp</item>
         </style>
         
 

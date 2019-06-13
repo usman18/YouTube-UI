@@ -47,6 +47,12 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
 			.load(video.getChannelPic())
 			.into(videoViewHolder.imgChannelPic);
 		
+		if (video.hasCaptions()) {
+			videoViewHolder.tvCaptions.setVisibility(View.VISIBLE);
+		} else {
+			videoViewHolder.tvCaptions.setVisibility(View.GONE);
+		}
+		
 		
 		String info = video.getChannelName() + " • " + video.getViews() + " views" + " • " + video.getTimestamp();
 		videoViewHolder.tvInfo.setText(info);
@@ -73,6 +79,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
 		TextView tvTitle;
 		TextView tvInfo;
 		CircleImageView imgChannelPic;
+		TextView tvCaptions;
 		
 		VideoViewHolder(@NonNull View itemView) {
 			super(itemView);
@@ -82,7 +89,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
 			tvTitle = itemView.findViewById(R.id.tvVideoTitle);
 			tvInfo = itemView.findViewById(R.id.tvInfo);
 			imgChannelPic = itemView.findViewById(R.id.imgChannelPic);
-			
+			tvCaptions = itemView.findViewById(R.id.tvCaptions);
 		}
 	}
 }

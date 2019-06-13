@@ -19,8 +19,11 @@
                 app:menu="@menu/bottom_nav_menu"
                 android:background="#ffffff"
                 app:elevation="8dp"
+                app:labelVisibilityMode="labeled"
                 android:textAlignment="center"
-                style="@style/bottom_nav"
+                style="@style/bottom_nav_style"
+                app:itemTextAppearanceInactive="@style/bottom_nav_text"
+                app:itemTextAppearanceActive="@style/bottom_nav_text"
                 app:itemTextColor="@color/bottom_nav_selector"
                 app:itemIconTint="@color/bottom_nav_selector"
                 android:layout_gravity="bottom" />
