@@ -16,11 +16,32 @@
 
         </android.support.design.widget.AppBarLayout>
         
-        <android.support.v7.widget.RecyclerView
-                android:id="@+id/rvHomePosts"
+        <android.support.v4.widget.NestedScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="wrap_content">
+        
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+        
+                        <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvMySubscriptions"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="12dp"
+                                />
         
         
+                        <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvSubscriptionPosts"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                        
+
+                </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
         
 </LinearLayout>
