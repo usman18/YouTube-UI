@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="8dp"
+        >
+        
+        
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/newContentCircle"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="#4286f5"
+                android:layout_marginTop="18dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgChannelPic"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/youtube1"
+                android:layout_margin="4dp"
+                />
+        
+        
+        
+        <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:orientation="vertical"
+                        android:layout_toStartOf="@id/imgThumbnail"
+                        >
+                        
+                        
+                        <TextView
+                                android:id="@+id/tvNotificationTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Joe Rogan uploaded : This is my new channel , checkout plz"
+                                android:textColor="@color/black"
+                                />
+                        
+                        <TextView
+                                android:id="@+id/tvTimeStamp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2 hours ago"
+                                android:textSize="12sp"
+                                />
+                        
+                        
+                </LinearLayout>
+                
+                <ImageView
+                        android:id="@+id/imgThumbnail"
+                        android:layout_width="70dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/youtube2"
+                        android:layout_alignParentEnd="true"
+                        android:scaleType="centerCrop"
+                        />
+                
+        </RelativeLayout>
+        
+        <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@drawable/ic_more_vert"
+                android:layout_margin="8dp"
+                android:layout_marginTop="22dp"
+                />
+        
+
+</LinearLayout>

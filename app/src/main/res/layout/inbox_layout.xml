@@ -2,16 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical">
         
         
         <include layout="@layout/toolbar_layout" />
         
-        
-        <android.support.v7.widget.RecyclerView
-                android:id="@+id/rvHomePosts"
+        <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-
+                android:layout_height="wrap_content"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextColor="@color/grey"
+                app:tabIndicatorColor="@color/black"
+                app:tabIndicatorHeight="2dp"
+                android:paddingTop="4dp"
+                android:elevation="8dp"
+                />
+        
+        <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        
+                
+                
 </LinearLayout>

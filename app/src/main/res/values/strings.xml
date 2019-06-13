@@ -7,6 +7,8 @@
         <string name="subscriptions">Subscriptions</string>
         <string name="search">Search</string>
         <string name="trending">Trending</string>
-        
-        
+        <string name="notifications">NOTIFICATIONS</string>
+        <string name="messages">MESSAGES</string>
+
+
 </resources>
