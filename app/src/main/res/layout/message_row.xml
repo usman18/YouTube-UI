@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfilePic"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/profile"
+                android:layout_marginEnd="16dp"
+                />
+
+        
+        <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgProfilePic"
+                android:text="Gibraan Jafar"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        
+        <TextView
+                android:id="@+id/tvLastMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Bye"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_alignStart="@id/tvName"
+                android:layout_below="@id/tvName"
+                />
+        
+        <TextView
+                android:id="@+id/tvTimeStamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 month ago"
+                android:layout_below="@id/tvLastMessage"
+                android:layout_alignStart="@id/tvName"
+                android:textSize="12sp"
+                />
+        
+        <TextView
+                android:id="@+id/tvSeenBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvTimeStamp"
+                android:layout_alignBaseline="@id/tvTimeStamp"
+                android:layout_marginStart="4dp"
+                android:text="Seen by you"
+                android:textSize="12sp"
+                />
+        
+
+</RelativeLayout>

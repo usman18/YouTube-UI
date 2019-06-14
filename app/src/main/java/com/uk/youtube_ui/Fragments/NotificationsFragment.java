@@ -45,7 +45,14 @@ public class NotificationsFragment extends Fragment {
 		notifications.add(new Notification(MainActivity.channelPics[1], MainActivity.thuumbnailUrls[1], "Elon Musk Interview", "MKBHD", "3 hours ago", false));
 		notifications.add(new Notification(MainActivity.channelPics[2], MainActivity.thuumbnailUrls[2], "Late Night Show with Will Smith", "The Late Night Show with Jimmy Fallon", "1 day ago", true));
 		notifications.add(new Notification(MainActivity.channelPics[3], MainActivity.thuumbnailUrls[3], "Late Night Show with Jimmy Kimmel starring Kevin Hart", "Jimmy Kimmel", "2 days ago", false));
-
+		notifications.add(new Notification(MainActivity.channelPics[0], MainActivity.thuumbnailUrls[0], "JRE - Best of the week", "Powerful JRE", "1 hour ago", false));
+		notifications.add(new Notification(MainActivity.channelPics[1], MainActivity.thuumbnailUrls[1], "Elon Musk Interview", "MKBHD", "3 hours ago", false));
+		notifications.add(new Notification(MainActivity.channelPics[2], MainActivity.thuumbnailUrls[2], "Late Night Show with Will Smith", "The Late Night Show with Jimmy Fallon", "1 day ago", true));
+		notifications.add(new Notification(MainActivity.channelPics[3], MainActivity.thuumbnailUrls[3], "Late Night Show with Jimmy Kimmel starring Kevin Hart", "Jimmy Kimmel", "2 days ago", false));
+		notifications.add(new Notification(MainActivity.channelPics[0], MainActivity.thuumbnailUrls[0], "JRE - Best of the week", "Powerful JRE", "1 hour ago", false));
+		notifications.add(new Notification(MainActivity.channelPics[1], MainActivity.thuumbnailUrls[1], "Elon Musk Interview", "MKBHD", "3 hours ago", false));
+		notifications.add(new Notification(MainActivity.channelPics[2], MainActivity.thuumbnailUrls[2], "Late Night Show with Will Smith", "The Late Night Show with Jimmy Fallon", "1 day ago", true));
+		notifications.add(new Notification(MainActivity.channelPics[3], MainActivity.thuumbnailUrls[3], "Late Night Show with Jimmy Kimmel starring Kevin Hart", "Jimmy Kimmel", "2 days ago", false));
 		
 		notificationAdapter = new NotificationAdapter(getContext(), notifications);
 		

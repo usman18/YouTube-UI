@@ -12,7 +12,7 @@
                 <ImageView
                         android:id="@+id/imgThumbnail"
                         android:layout_width="match_parent"
-                        android:layout_height="195dp"
+                        android:layout_height="200dp"
                         android:scaleType="centerCrop"
                         android:background="@color/trans_black"
                         />
