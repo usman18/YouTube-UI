@@ -40,6 +40,7 @@ public class MessagesFragment extends Fragment {
 		messages = new ArrayList<>();
 		messages.add(new Message("Rohan", "Whats up bro ?", null, "1 day ago", null));
 		messages.add(new Message("Joe Rogan", "We 'll have him on the podcast after a few more days.", MainActivity.channelPics[0], "2 days ago", "you"));
+		messages.add(new Message("Sam Curran", "Take care", null, "1 week ago", "Sam Curran"));
 		
 		
 		adapter = new MessageAdapter(getContext(), messages);

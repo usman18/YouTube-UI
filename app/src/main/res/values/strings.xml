@@ -9,6 +9,11 @@
         <string name="trending">Trending</string>
         <string name="notifications">NOTIFICATIONS</string>
         <string name="messages">MESSAGES</string>
+        <string name="history">History</string>
+        <string name="downloads">Downloads</string>
+        <string name="my_videos">My Videos</string>
+        <string name="purchases">Purchases</string>
+        <string name="watch_later">Watch Later</string>
 
 
 </resources>
