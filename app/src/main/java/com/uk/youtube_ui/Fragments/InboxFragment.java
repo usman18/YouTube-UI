@@ -51,4 +51,6 @@ public class InboxFragment extends Fragment {
 		tabLayout.setupWithViewPager(viewPager);
 		
 	}
+	
+	
 }

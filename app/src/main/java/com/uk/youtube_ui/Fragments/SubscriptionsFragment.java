@@ -22,11 +22,14 @@ import java.util.ArrayList;
 public class SubscriptionsFragment extends Fragment {
 	
 	private RecyclerView rvSubscriptions;
+	private RecyclerView rvPosts;
+	
 	private ChannelAdapter subscribedChannelsAdapter;
+	private VideoAdapter videoAdapter;
 	
 	private ArrayList<Channel> channels;
+	private ArrayList<Video> videos;
 	
-	private RecyclerView rvPosts;
 	
 	@Nullable
 	@Override
@@ -38,14 +41,42 @@ public class SubscriptionsFragment extends Fragment {
 	@Override
 	public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
-	
-		rvSubscriptions = view.findViewById(R.id.rvMySubscriptions);
 		
+		initialize(view);
+		populateChannels();
+		populateVideos();
+		subscribedChannelsAdapter.notifyDataSetChanged();
+		videoAdapter.notifyDataSetChanged();
+		
+	}
+	
+	
+	private void initialize(View view) {
+		
+		channels = new ArrayList<>();
+		
+		rvSubscriptions = view.findViewById(R.id.rvMySubscriptions);
 		LinearLayoutManager subscriptionsLayoutManager = new LinearLayoutManager(getContext());
 		subscriptionsLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 		rvSubscriptions.setLayoutManager(subscriptionsLayoutManager);
 		
-		channels = new ArrayList<>();
+		subscribedChannelsAdapter = new ChannelAdapter(getContext(), channels);
+		rvSubscriptions.setAdapter(subscribedChannelsAdapter);
+		
+		
+		videos = new ArrayList<>();
+		
+		rvPosts = view.findViewById(R.id.rvSubscriptionPosts);
+		rvPosts.setLayoutManager(new LinearLayoutManager(getContext()));
+		
+		videoAdapter = new VideoAdapter(getContext(), videos);
+		rvPosts.setAdapter(videoAdapter);
+		
+	}
+	
+	
+	private void populateChannels() {
+		
 		channels.add(new Channel("Joe Rogan Experience", MainActivity.channelPics[0], false));
 		channels.add(new Channel("MKBHD", MainActivity.channelPics[1], true));
 		channels.add(new Channel("The Late Night Show", MainActivity.channelPics[2], true));
@@ -54,27 +85,15 @@ public class SubscriptionsFragment extends Fragment {
 		channels.add(new Channel("The Late Night Show", MainActivity.channelPics[2], true));
 		channels.add(new Channel("Jimmy Kimmel", MainActivity.channelPics[3], true));
 		
-		
-		subscribedChannelsAdapter = new ChannelAdapter(getContext(), channels);
-		rvSubscriptions.setAdapter(subscribedChannelsAdapter);
-		
-		
-		
-		
-		ArrayList<Video> videos = new ArrayList<>();
-		RecyclerView rvVideos = view.findViewById(R.id.rvSubscriptionPosts);
-		
+	}
+	
+	
+	private void populateVideos() {
 		videos.add(new Video(MainActivity.channelPics[0], MainActivity.thuumbnailUrls[0], "The Joe Rogan Experience", "JRE", "1m", "5 days ago", "1:10", false));
 		videos.add(new Video(MainActivity.channelPics[1], MainActivity.thuumbnailUrls[1], "Elon Musk Interview", "MKBHD", "1.5m", "1 week ago", "29:10", true));
 		videos.add(new Video(MainActivity.channelPics[2], MainActivity.thuumbnailUrls[2], "Late Night Show with Jimmy Fallon starring Will Smith", "Late Night Show with Jimmy Fallon", "6m", "3 days ago", "6:00",false));
 		videos.add(new Video(MainActivity.channelPics[3], MainActivity.thuumbnailUrls[3], "Late Night Show with Jimmy Kimmel starring Kevin Hart", "Jimmy Kimmel", "23m", "1 day ago", "11:10", true));
-		
-		
-		VideoAdapter adapter = new VideoAdapter(getContext(), videos);
-		rvVideos.setLayoutManager(new LinearLayoutManager(getContext()));
-		rvVideos.setAdapter(adapter);
-		
-		
-		
 	}
+	
+	
 }

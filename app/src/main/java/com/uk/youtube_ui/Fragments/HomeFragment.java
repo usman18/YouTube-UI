@@ -33,23 +33,35 @@ public class HomeFragment extends Fragment {
 	@Override
 	public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
+
+		initialize(view);
+		populateVideos();
+		adapter.notifyDataSetChanged();
+		
+	}
 	
+	
+	private void initialize(View view) {
+		
 		videos = new ArrayList<>();
 		rvVideos = view.findViewById(R.id.rvHomePosts);
+		adapter = new VideoAdapter(getContext(), videos);
+		rvVideos.setLayoutManager(new LinearLayoutManager(getContext()));
+		rvVideos.setAdapter(adapter);
 		
-		String url = "https://www.jrepodcast.com/wp-content/uploads/2019/05/best-of-the-week-may-5-2019-joe-rogan-experience-youtube-thumbnail.jpg";
-		
+	}
+	
+	
+	private void populateVideos() {
+		/*
+		 *  Population logic goes here...
+		 */
 		
 		videos.add(new Video(MainActivity.channelPics[3], MainActivity.thuumbnailUrls[3], "Late Night Show with Jimmy Kimmel starring Kevin Hart", "Jimmy Kimmel", "23m", "1 day ago", "11:10", true));
 		videos.add(new Video(MainActivity.channelPics[2], MainActivity.thuumbnailUrls[2], "Late Night Show with Jimmy Fallon starring Will Smith", "Late Night Show with Jimmy Fallon", "6m", "3 days ago", "6:00", true));
 		videos.add(new Video(MainActivity.channelPics[0], MainActivity.thuumbnailUrls[0], "The Joe Rogan Experience", "JRE", "1m", "5 days ago", "1:10", false));
 		videos.add(new Video(MainActivity.channelPics[1], MainActivity.thuumbnailUrls[1], "Elon Musk Interview", "MKBHD", "1.5m", "1 week ago", "29:10", true));
-		videos.add(new Video(url, url, "JRE - Best of the week", "JRE Clips", "1.3m", "2 days ago", "10:08", false));
-		
-		
-		adapter = new VideoAdapter(getContext(), videos);
-		rvVideos.setLayoutManager(new LinearLayoutManager(getContext()));
-		rvVideos.setAdapter(adapter);
+		videos.add(new Video(MainActivity.channelPics[4], MainActivity.thuumbnailUrls[4], "JRE - Best of the week", "JRE Clips", "1.3m", "2 days ago", "10:08", false));
 		
 	}
 }

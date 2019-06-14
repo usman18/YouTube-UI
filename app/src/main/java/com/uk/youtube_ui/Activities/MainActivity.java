@@ -17,33 +17,39 @@ import com.uk.youtube_ui.R;
 
 public class MainActivity extends AppCompatActivity {
 	
-	
+	/*
+	* Below are random image Urls from the internet for demonstration
+	*/
 	public static final String[] thuumbnailUrls = {
 		"https://i2.wp.com/brainflow.co/wp-content/uploads/2018/09/Joe-Rogan-Supplements.jpg?fit=1090%2C614&ssl=1",
 		"https://nyoobserver.files.wordpress.com/2018/08/screen-shot-2018-08-22-at-1-57-37-pm.png?w=1000&h=600",
 		"https://i.ytimg.com/vi/kD-_iyS95AQ/maxresdefault.jpg",
-		"https://i.ytimg.com/vi/bwu_8quv1X8/maxresdefault.jpg"
+		"https://i.ytimg.com/vi/bwu_8quv1X8/maxresdefault.jpg",
+		"https://www.jrepodcast.com/wp-content/uploads/2019/05/best-of-the-week-may-5-2019-joe-rogan-experience-youtube-thumbnail.jpg"
 	};
-	
 	
 	public static final String[] channelPics = {
 		"https://yt3.ggpht.com/a/AGF-l78OfG5OxzCfyyoFqw-dKeiFNGzTIT4YgpMK4Q=s900-mo-c-c0xffffffff-rj-k-no",
 		"https://i.redd.it/uldyq27j4nn01.jpg",
 		"https://novacapsfans.files.wordpress.com/2018/06/image27.png?w=640",
-		"https://i.ytimg.com/vi/Gki-F87qB1Y/maxresdefault.jpg"
+		"https://i.ytimg.com/vi/Gki-F87qB1Y/maxresdefault.jpg",
+		"https://yt3.ggpht.com/a/AGF-l78OfG5OxzCfyyoFqw-dKeiFNGzTIT4YgpMK4Q=s900-mo-c-c0xffffffff-rj-k-no"
 	};
 	
-	
-	private BottomNavigationView btmNav;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		btmNav = findViewById(R.id.btmNav);
-		
+		initialize();
 		loadFragment(new HomeFragment());
+	}
+	
+	
+	private void initialize() {
+		
+		BottomNavigationView btmNav = findViewById(R.id.btmNav);
 		
 		btmNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 			@Override
@@ -65,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
 		});
 		
 	}
+	
 	
 	
 	private boolean loadFragment(Fragment fragment) {
