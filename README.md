@@ -16,7 +16,7 @@ A recreation of UI of the YouTube app in Android ❤️
 
 
 ## Contributions
-Contributions are always welcome. Please fork this repository and contribute using pull requests.
+Contributions are always welcome. Please fork this repository and contribute using pull requests. The pull requests will be thoroughly assessed and if found significant will be accepted.
 
 ## Lets become friends
 - [LinkedIn](https://www.linkedin.com/in/usman-khan-7b04b1138)
