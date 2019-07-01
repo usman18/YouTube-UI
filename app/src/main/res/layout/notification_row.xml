@@ -5,6 +5,7 @@
         android:orientation="horizontal"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:padding="8dp"
+        android:background="?attr/bgColor"
         >
         
         
@@ -15,7 +16,7 @@
                 android:layout_height="8dp"
                 android:src="#4286f5"
                 android:layout_marginTop="18dp"
-                app:civ_border_color="@color/white"
+                app:civ_border_color="?attr/colorPrimary"
                 app:civ_border_width="2dp"
                 />
 
@@ -50,7 +51,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Joe Rogan uploaded : This is my new channel , checkout plz"
-                                android:textColor="@color/black"
+                                android:textColor="?attr/textColor"
                                 />
                         
                         <TextView
@@ -58,6 +59,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="2 hours ago"
+                                android:textColor="?attr/metaTextColor"
                                 android:textSize="12sp"
                                 />
                         

@@ -2,6 +2,7 @@
 <RelativeLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
+        android:background="?attr/bgColor"
         xmlns:android="http://schemas.android.com/apk/res/android" >
         
         
@@ -20,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/imgProfilePic"
                 android:text="Gibraan Jafar"
-                android:textColor="@color/black"
+                android:textColor="?attr/textColor"
                 android:textSize="15sp"
                 />
         
@@ -32,7 +33,7 @@
                 android:ellipsize="end"
                 android:text="Bye"
                 android:textSize="13sp"
-                android:textColor="@color/black"
+                android:textColor="?attr/textColor"
                 android:layout_alignStart="@id/tvName"
                 android:layout_below="@id/tvName"
                 />
@@ -45,6 +46,7 @@
                 android:layout_below="@id/tvLastMessage"
                 android:layout_alignStart="@id/tvName"
                 android:textSize="12sp"
+                android:textColor="?attr/metaTextColor"
                 />
         
         <TextView
@@ -55,6 +57,7 @@
                 android:layout_alignBaseline="@id/tvTimeStamp"
                 android:layout_marginStart="4dp"
                 android:text="Seen by you"
+                android:textColor="?attr/metaTextColor"
                 android:textSize="12sp"
                 />
         

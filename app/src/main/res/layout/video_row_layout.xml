@@ -2,6 +2,7 @@
 <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="?attr/bgColor"
         xmlns:android="http://schemas.android.com/apk/res/android" >
         
         
@@ -62,7 +63,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Joe Rogan with Elon Musk on Tesla"
-                                android:textColor="@color/black"
+                                android:textColor="?attr/textColor"
                                 android:textSize="13sp"
                                 android:textStyle="bold"
                                 />
@@ -72,7 +73,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Powerful JRE 2m views 1 year ago"
-                                android:textColor="#606060"
+                                android:textColor="?attr/metaTextColor"
                                 android:textSize="12sp"
                                 />
                         
@@ -82,8 +83,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="CC"
-                                android:textColor="#606060"
-                                android:background="#f2f2f2"
+                                android:textColor="?attr/captionText"
+                                android:background="?attr/captionBg"
                                 android:paddingStart="4dp"
                                 android:textSize="13sp"
                                 android:paddingEnd="4dp"
@@ -104,7 +105,7 @@
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/divider"
+                android:background="?attr/dividerColor"
                 android:layout_marginTop="12dp"
                 />
 

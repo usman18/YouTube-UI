@@ -2,6 +2,7 @@
 <LinearLayout android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="?attr/bgColor"
         xmlns:android="http://schemas.android.com/apk/res/android" >
         
         
@@ -32,13 +33,14 @@
                         android:src="@drawable/ic_history_black"
                         android:layout_marginEnd="24dp"
                         android:layout_gravity="center"
+                        android:tint="?attr/iconColor"
                         />
                 
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/history"
-                        android:textColor="@color/black"
+                        android:textColor="?attr/textColor"
                         android:textSize="16sp"
                         android:layout_gravity="center"
                         />
@@ -65,13 +67,14 @@
                         android:src="@drawable/ic_file_downloads"
                         android:layout_marginEnd="24dp"
                         android:layout_gravity="center"
+                        android:tint="?attr/iconColor"
                         />
                 
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/downloads"
-                        android:textColor="@color/black"
+                        android:textColor="?attr/textColor"
                         android:textSize="16sp"
                         android:layout_gravity="center"
                         />
@@ -95,13 +98,14 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginEnd="24dp"
+                        android:tint="?attr/iconColor"
                         android:src="@drawable/ic_video_library_black_24dp" />
                 
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/my_videos"
-                        android:textColor="@color/black"
+                        android:textColor="?attr/textColor"
                         android:textSize="16sp"
                         android:layout_gravity="center"
                         />
@@ -126,13 +130,14 @@
                         android:src="@drawable/ic_purchases"
                         android:layout_marginEnd="24dp"
                         android:layout_gravity="center"
+                        android:tint="?attr/iconColor"
                         />
                 
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/purchases"
-                        android:textColor="@color/black"
+                        android:textColor="?attr/textColor"
                         android:textSize="16sp"
                         />
         
@@ -157,13 +162,14 @@
                         android:src="@drawable/ic_watch_later"
                         android:layout_marginEnd="24dp"
                         android:layout_gravity="center"
+                        android:tint="?attr/iconColor"
                         />
                 
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/watch_later"
-                        android:textColor="@color/black"
+                        android:textColor="?attr/textColor"
                         android:textSize="16sp"
                         android:layout_gravity="center"
                         />

@@ -1,12 +1,17 @@
 package com.uk.youtube_ui.Activities;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.uk.youtube_ui.Fragments.HomeFragment;
 import com.uk.youtube_ui.Fragments.InboxFragment;
@@ -17,9 +22,12 @@ import com.uk.youtube_ui.R;
 
 public class MainActivity extends AppCompatActivity {
 	
+	public static boolean nightMode = false;
+	
 	/*
 	* Below are random image Urls from the internet for demonstration
 	*/
+	
 	public static final String[] thuumbnailUrls = {
 		"https://i2.wp.com/brainflow.co/wp-content/uploads/2018/09/Joe-Rogan-Supplements.jpg?fit=1090%2C614&ssl=1",
 		"https://nyoobserver.files.wordpress.com/2018/08/screen-shot-2018-08-22-at-1-57-37-pm.png?w=1000&h=600",
@@ -40,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+			nightMode = true;
+			setTheme(R.style.MainScreenDarkTheme);
+		}
 		setContentView(R.layout.activity_main);
 		
 		initialize();
@@ -49,7 +61,11 @@ public class MainActivity extends AppCompatActivity {
 	
 	private void initialize() {
 		
+		Toolbar toolbar = findViewById(R.id.toolbar);
+		setSupportActionBar(toolbar);
+		
 		BottomNavigationView btmNav = findViewById(R.id.btmNav);
+		
 		
 		btmNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 			@Override
@@ -85,5 +101,6 @@ public class MainActivity extends AppCompatActivity {
 		}
 		return false;
 	}
+	
 	
 }

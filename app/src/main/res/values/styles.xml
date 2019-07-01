@@ -9,12 +9,44 @@
         </style>
         
         
-        <style name="MainScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <style name="MainScreenLightTheme" parent="Theme.AppCompat.Light.NoActionBar">
                 <!-- Customize your theme here. -->
                 <item name="colorPrimary">@color/colorPrimary</item>
                 <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
                 <item name="colorAccent">@color/colorAccent</item>
+                <item name="bgColor">@color/colorPrimary</item>
+                <item name="btmNavSelected">@color/colorAccent</item>
+                <item name="btmNavUnselected">@color/grey</item>
+                <item name="toolbarIcon">@color/grey</item>
+                <item name="textColor">@color/black</item>
+                <item name="metaTextColor">#606060</item>
+                <item name="dividerColor">@color/divider</item>
+                <item name="iconColor">#606060</item>
+                <item name="captionBg">#f2f2f2</item>
+                <item name="captionText">#606060</item>
+                <item name="tabSelected">@color/black</item>
+                <item name="tabUnselected">@color/lightGrey</item>
         </style>
+        
+        <style name="MainScreenDarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+                <!-- Customize your theme here. -->
+                <item name="colorPrimary">@color/darkGrey</item>
+                <item name="colorPrimaryDark">@color/black</item>
+                <item name="colorAccent">@color/white</item>
+                <item name="bgColor">@color/darkGrey</item>
+                <item name="btmNavSelected">@color/white</item>
+                <item name="btmNavUnselected">@color/lightGrey</item>
+                <item name="toolbarIcon">@color/white</item>
+                <item name="textColor">@color/white</item>
+                <item name="metaTextColor">#888888</item>
+                <item name="dividerColor">@color/grey</item>
+                <item name="iconColor">@color/lightGrey</item>
+                <item name="captionBg">#3e3e3e</item>
+                <item name="captionText">#6b6b6b</item>
+                <item name="tabSelected">@color/white</item>
+                <item name="tabUnselected">@color/lightGrey</item>
+        </style>
+        
         
         
         <style name="bottom_nav_style" parent="Widget.Design.BottomNavigationView">
