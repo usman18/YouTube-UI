@@ -5,6 +5,7 @@ A recreation of UI of the YouTube app in Android ❤️
 ## ScreenShots
 
 Light Theme
+<br><br>
 
 <img height=550 width=275 src="https://github.com/usman18/YouTube-UI/blob/master/Screenshots/Yotube1.JPG"
 /><img height=550 width=275 src="https://github.com/usman18/YouTube-UI/blob/master/Screenshots/Yotube2.JPG" hspace=24
@@ -16,7 +17,12 @@ Light Theme
 /><img height=550 width=275 src="https://github.com/usman18/YouTube-UI/blob/master/Screenshots/Yotube6.JPG"
 />
 
+<br><br>
+
 Dark Theme
+
+<br><br>
+
 <img height=550 width=275 src="https://github.com/usman18/YouTube-UI/blob/master/Screenshots/YoutubeD1.JPG"
 /><img height=550 width=275 src="https://github.com/usman18/YouTube-UI/blob/master/Screenshots/YoutubeD2.JPG" hspace=24
 /><img height=550 width=275 src="https://github.com/usman18/YouTube-UI/blob/master/Screenshots/YoutubeD3.JPG"
