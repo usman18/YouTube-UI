@@ -2,9 +2,10 @@
 A recreation of UI of the YouTube app in Android ❤️
 
 
-## ScreenShots
+# ScreenShots
 
 <br>
+
 ## Light Theme
 <br><br>
 
@@ -19,6 +20,7 @@ A recreation of UI of the YouTube app in Android ❤️
 />
 
 <br>
+
 ## Dark Theme
 <br><br>
 
